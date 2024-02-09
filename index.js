@@ -45,4 +45,13 @@ let differenzaDiSecondi = Math.round(differenzaDiTempo / (1000)) ;
 console.log("differenza di secondi",differenzaDiSecondi)
  
 
+let secondi = document.querySelector("#seconds")
+
+setInterval(secondiMancanti,1000)
+//let count = 0
+
+function secondiMancanti(){
+secondi.innerHTML = differenzaDiSecondi--
+  //console.log (count++)
+}
  
