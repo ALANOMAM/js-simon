@@ -28,9 +28,21 @@ let differenzaDiTempo =
     data2.getTime() - data1.getTime();
     console.log("differenza di tempo in millisecondi",differenzaDiTempo)
  
-//dalla differenza di tempo trovato sopra, ricavo la differenza di giorni.
+//dalla differenza di tempo trovato sopra, ricavo la DIFFERENZA DI GIORNI.
 let differenzaDiGiorni = Math.round(differenzaDiTempo / (1000 * 3600 * 24));
-console.log("differenza di tempo di giorni",differenzaDiGiorni)
+console.log("differenza di tempo in giorni",differenzaDiGiorni)
+
+//dalla differenza di tempo trovato sopra, ricavo la DIFFERENZA DI ORE.
+let differenzaDiOre = Math.round(differenzaDiTempo / (1000 * 3600));
+console.log("differenza di ore",differenzaDiOre)
+
+//dalla differenza di tempo trovato sopra, ricavo la DIFFERENZA DI MINUTI.
+let differenzaDiMinuti = Math.round(differenzaDiTempo / (1000 * 60));
+console.log("differenza di minuti",differenzaDiMinuti)
+
+//dalla differenza di tempo trovato sopra, ricavo la DIFFERENZA DI SECONDI.
+let differenzaDiSecondi = Math.round(differenzaDiTempo / (1000)) ;
+console.log("differenza di secondi",differenzaDiSecondi)
  
 
  
