@@ -46,12 +46,22 @@ console.log("differenza di secondi",differenzaDiSecondi)
  
 
 let secondi = document.querySelector("#seconds")
+let minuti = document.querySelector("#minutes")
+let ore = document.querySelector("#hours")
 
-setInterval(secondiMancanti,1000)
-//let count = 0
+ setInterval(secondiMancanti,1000)
+ setInterval(minutiMancanti,60000)
+ setInterval(oreMancanti,36000000)
+
 
 function secondiMancanti(){
 secondi.innerHTML = differenzaDiSecondi--
-  //console.log (count++)
 }
  
+function minutiMancanti(){
+    minuti.innerHTML = differenzaDiMinuti--
+}
+
+function oreMancanti(){
+    ore.innerHTML = differenzaDiOre--
+}
