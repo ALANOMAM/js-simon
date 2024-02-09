@@ -20,8 +20,8 @@ console.log(d2.setMinutes(30))
 console.log(d2.getMinutes())
  */
 
-let data1 = new Date("01/16/2024");
-let data2 = new Date("01/26/2024");
+let data1 = new Date();
+let data2 = new Date("02/12/2024 9:30:00");
  
 // calcolo la differenza di tempo tra due date indicative
 let differenzaDiTempo =
