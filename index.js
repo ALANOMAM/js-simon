@@ -4,21 +4,7 @@ Sfruttiamo le timing functions per fare il conto alla rovescia per la correzione
 Ogni secondo il nostro countdown dovrà scalare fino alle 9:30 di lunedì mattina!
  
  */
-/*
- let d1 = new Date()
- console.log(d1)
- console.log( "hours",d1.getHours())
- console.log( "minutes",d1.getMinutes())
- console.log( "seconds",d1.getSeconds())
- console.log("milliseconds",d1.getMilliseconds())
 
- let d2 = new Date("2024-02-12")
-console.log(d2)
-console.log(d2.setHours(9))
-console.log(d2.getHours())
-console.log(d2.setMinutes(30))
-console.log(d2.getMinutes())
- */
 
 let data1 = new Date();
 let data2 = new Date("02/12/2024 9:30:00");
@@ -49,11 +35,17 @@ let secondi = document.querySelector("#seconds")
 let minuti = document.querySelector("#minutes")
 let ore = document.querySelector("#hours")
 
+   //qui dico che i contenuti dei secondi si aggiorna ogni secondo in dom
  setInterval(secondiMancanti,1000)
+
+ //qui dico che i contenuti dei minuti si aggiorna ogni minuto in dom
  setInterval(minutiMancanti,60000)
+
+ //qui dico che i contenuti delle ore si aggiorna ogni ora in dom
  setInterval(oreMancanti,36000000)
 
 
+ // funzioni che inseriscono in dom il conto alla rovescio del mio tempo.
 function secondiMancanti(){
 secondi.innerHTML = differenzaDiSecondi--
 }
