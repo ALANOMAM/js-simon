@@ -29,10 +29,13 @@ console.log("differenza di minuti",differenzaDiMinuti)
 let differenzaDiSecondi = Math.round(differenzaDiTempo / 1000 % 60) ;
 console.log("differenza di secondi",differenzaDiSecondi)
  
-
+// collegamento tra dom e js
 let secondi = document.querySelector("#seconds")
 let minuti = document.querySelector("#minutes")
 let ore = document.querySelector("#hours")
 
-
+ // esposizione delle ore,minuti e secondi nel dom
+secondi.innerHTML = differenzaDiSecondi
+minuti.innerHTML = differenzaDiMinuti
+ore.innerHTML = differenzaDiOre
 
